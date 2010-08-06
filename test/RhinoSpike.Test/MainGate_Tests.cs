@@ -1,31 +1,34 @@
 ﻿using System.Collections.Generic;
 using Machine.Specifications;
-using NUnit.Framework;
 using Rhino.Mocks;
 
 
 namespace RhinoSpike.Test
 {
-    [TestFixture]
-    public class MainGate_Tests
+    [Subject("MainGate")]
+    public class ctor_
     {
-        MockRepository mockery = new MockRepository();
 
-        [Test]
-        public void test_Foo() {
-            IOne one = mockery.DynamicMock<IOne>();
-            ITwo two = mockery.DynamicMock<ITwo>();
+        private Establish context
+            = () =>
+                  {
+                      _mockery = new MockRepository();
+                      _one = _mockery.DynamicMock<IOne>();
+                      _two = _mockery.DynamicMock<ITwo>();
 
-            MainGate mainGate;
+                      Expect.Call(_one.GetAList()).Return(new List<int>());
+                  };
 
-            using (mockery.Record()) {
-                Expect.Call(one.GetAList()).Return(new List<int>());
-                Expect.Call(two.GetAList()).Return(new List<int>());
-            }
-            using (mockery.Playback()) {
-                mainGate = new MainGate(one, two);
-            }
-            mockery.VerifyAll();
-        }
+        private Because of = () => {
+                                       _mockery.ReplayAll();
+                                       gate = new MainGate(_one, _two);
+                                    };
+
+        It should_call_IOne_GetAList =()=> _one.VerifyAllExpectations();
+
+        private static MainGate gate;
+        private static MockRepository _mockery;
+        private static IOne _one;
+        private static ITwo _two;
     }
 }
