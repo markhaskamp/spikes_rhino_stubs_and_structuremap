@@ -45,8 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IOne.cs" />
+    <Compile Include="ITwo.cs" />
+    <Compile Include="MainGate.cs" />
+    <Compile Include="One.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Two.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

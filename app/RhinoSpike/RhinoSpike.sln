@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoSpike", "RhinoSpike.csproj", "{8B0B91FB-87DB-48FC-9BF6-E2939FBB451E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoSpike.Test", "..\..\test\RhinoSpike.Test\RhinoSpike.Test.csproj", "{05BD8526-47D0-4862-AE3E-011602B05ED9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{8B0B91FB-87DB-48FC-9BF6-E2939FBB451E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B0B91FB-87DB-48FC-9BF6-E2939FBB451E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B0B91FB-87DB-48FC-9BF6-E2939FBB451E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05BD8526-47D0-4862-AE3E-011602B05ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BD8526-47D0-4862-AE3E-011602B05ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05BD8526-47D0-4862-AE3E-011602B05ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05BD8526-47D0-4862-AE3E-011602B05ED9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
