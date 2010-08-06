@@ -17,6 +17,7 @@ namespace RhinoSpike.Test
                       _two = _mockery.DynamicMock<ITwo>();
 
                       Expect.Call(_one.GetAList()).Return(new List<int>());
+                      Expect.Call(_two.GetAList()).Return(new List<int>());
                   };
 
         private Because of = () => {
@@ -24,7 +25,8 @@ namespace RhinoSpike.Test
                                        gate = new MainGate(_one, _two);
                                     };
 
-        It should_call_IOne_GetAList =()=> _one.VerifyAllExpectations();
+        private It should_call_IOne_GetAList =()=> _one.VerifyAllExpectations();
+        private It should_call_ITwo_GetAList = () => _two.VerifyAllExpectations();
 
         private static MainGate gate;
         private static MockRepository _mockery;
