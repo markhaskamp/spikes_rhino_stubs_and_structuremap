@@ -28,3 +28,9 @@ desc "run mspec tests"
 task :test => [:build] do |t|
   sh "#{home_dir}/tools_bundle/mspec/mspec --html #{home_dir}/rpt/specs.html #{home_dir}/test/RhinoSpike.Test/bin/Debug/RhinoSpike.Test.dll"
 end
+
+desc "run mspec tests. send output to console"
+task :test_console => [:build] do |t|
+  sh "#{home_dir}/tools_bundle/mspec/mspec #{home_dir}/test/RhinoSpike.Test/bin/Debug/RhinoSpike.Test.dll"
+end
+
