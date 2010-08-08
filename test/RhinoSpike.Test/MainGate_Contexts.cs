@@ -17,7 +17,6 @@ namespace RhinoSpike.Test
                      {
                          _mockery = new MockRepository();
                          _one = _mockery.DynamicMock<IOne>();
-//                         _one = _mockery.Stub<IOne>();
                          _two = _mockery.DynamicMock<ITwo>();
                      };
     }

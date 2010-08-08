@@ -18,7 +18,7 @@ namespace RhinoSpike.Test
 
         private Because of = () => {
                                        _mockery.ReplayAll();
-                                       gate = new MainGate(_one, _two);
+                                       gate = new MainGate();
                                     };
 
         private It should_call_IOne_GetAList =()=> _one.VerifyAllExpectations();

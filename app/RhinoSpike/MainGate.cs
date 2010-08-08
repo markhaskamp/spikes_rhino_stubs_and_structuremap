@@ -1,5 +1,5 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using StructureMap;
 
 namespace RhinoSpike
 {
@@ -7,11 +7,19 @@ namespace RhinoSpike
     {
         private IOne _one;
         private ITwo _two;
-        public MainGate(IOne one, ITwo two) {
-            _one = one;
-            _two = two;
 
-            List<int> aList = _one.GetAList();
+        public IList<int> MainList { get; set; }
+        public MainGate() {
+            ObjectFactory.Initialize(sm =>
+                                         {
+                                             sm.For<IOne>().Use<One>();
+                                             sm.For<ITwo>().Use<Two>();
+                                         });
+
+            _one = StructureMap.ObjectFactory.GetInstance<IOne>();
+            _two = StructureMap.ObjectFactory.GetInstance<ITwo>();
+
+            MainList = _one.GetAList();
             List<int> twoList = _two.GetAList();
         }
     }

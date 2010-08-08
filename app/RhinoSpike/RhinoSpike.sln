@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoSpike", "RhinoSpike.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoSpike.Test", "..\..\test\RhinoSpike.Test\RhinoSpike.Test.csproj", "{05BD8526-47D0-4862-AE3E-011602B05ED9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientConsole", "..\ClientConsole\ClientConsole.csproj", "{28F9273E-2B1E-428A-83E7-BC0274AA8493}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{05BD8526-47D0-4862-AE3E-011602B05ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05BD8526-47D0-4862-AE3E-011602B05ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05BD8526-47D0-4862-AE3E-011602B05ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F9273E-2B1E-428A-83E7-BC0274AA8493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F9273E-2B1E-428A-83E7-BC0274AA8493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F9273E-2B1E-428A-83E7-BC0274AA8493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F9273E-2B1E-428A-83E7-BC0274AA8493}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

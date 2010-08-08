@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{05BD8526-47D0-4862-AE3E-011602B05ED9}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{28F9273E-2B1E-428A-83E7-BC0274AA8493}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RhinoSpike.Test</RootNamespace>
-    <AssemblyName>RhinoSpike.Test</AssemblyName>
+    <RootNamespace>ClientConsole</RootNamespace>
+    <AssemblyName>ClientConsole</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,18 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Machine.Specifications, Version=0.3.0.0, Culture=neutral, PublicKeyToken=5c474de7a495cff1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\tools_bundle\mspec\Machine.Specifications.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework, Version=2.5.5.10112, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\tools_bundle\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Rhino.Mocks, Version=3.5.0.1337, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\tools_bundle\Rhino.Mocks.dll</HintPath>
-    </Reference>
     <Reference Include="StructureMap, Version=2.6.1.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\tools_bundle\structure_map\StructureMap.dll</HintPath>
@@ -61,12 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainGate_Contexts.cs" />
-    <Compile Include="MainGate_Tests.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\app\RhinoSpike\RhinoSpike.csproj">
+    <ProjectReference Include="..\RhinoSpike\RhinoSpike.csproj">
       <Project>{8B0B91FB-87DB-48FC-9BF6-E2939FBB451E}</Project>
       <Name>RhinoSpike</Name>
     </ProjectReference>
