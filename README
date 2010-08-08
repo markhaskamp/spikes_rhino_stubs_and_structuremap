@@ -1,0 +1,7 @@
+A contrived example of nested calls so I can experiment with wiring up Rhino Stubs with StructureMap for the sake of running MSpec tests.
+
+MainGate is a class library
+  it holds IOne, and ITwo instance variables
+   IOne instantiates an IEleven variable
+      IEleven instantiates an IOneHundredOne variable
+    
