@@ -1,5 +1,6 @@
 using Machine.Specifications;
 using Rhino.Mocks;
+using StructureMap;
 
 namespace RhinoSpike.Test
 {
@@ -16,8 +17,11 @@ namespace RhinoSpike.Test
             = () =>
                      {
                          _mockery = new MockRepository();
-                         _one = _mockery.DynamicMock<IOne>();
-                         _two = _mockery.DynamicMock<ITwo>();
+                         _one = _mockery.Stub<IOne>();
+                         _two = _mockery.Stub<ITwo>();
+
+                         ObjectFactory.Inject(typeof(IOne), _one);
+                         ObjectFactory.Inject(typeof(ITwo), _two);
                      };
     }
 }
