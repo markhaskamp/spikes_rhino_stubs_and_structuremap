@@ -15,6 +15,7 @@ This project has 2 different clients that use MainGate:
 2. The MSpec tests
   To run:
     cd into the bld\ directory
-    run 'rake'  or 'rake test['html'] to create a rpt\specs.html file
+    run 'rake'  or 
+        'rake test['html'] to create a rpt\specs.html file
 
     
