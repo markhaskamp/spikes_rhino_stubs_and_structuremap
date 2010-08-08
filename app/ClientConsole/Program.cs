@@ -2,6 +2,7 @@
 using RhinoSpike;
 using StructureMap;
 
+
 namespace ClientConsole
 {
     class Program
@@ -12,6 +13,11 @@ namespace ClientConsole
 
         public Program() {
 
+            ObjectFactory.Initialize(sm =>
+                                         {
+                                             sm.For<IOne>().Use<One>();
+                                             sm.For<ITwo>().Use<Two>();
+                                         });
             MainGate mainGate = new MainGate();
 
             foreach (int mainListItem in mainGate.MainList) {
