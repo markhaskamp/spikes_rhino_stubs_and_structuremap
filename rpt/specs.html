@@ -107,9 +107,7 @@ div.supplement {
   </style>
 </head>
 <body>
-  <ul class="prev-next"><li class="failure">
-      <a href="#1">Go to first failed specification &dArr;</a>
-    </li>
+  <ul class="prev-next">
   </ul>
 <h1>
     RhinoSpike.Test
@@ -117,8 +115,7 @@ div.supplement {
 <h2 class="count">
   1 concern,
   1 context,
-  2 specifications,
-    <span class="failure">2 failures</span>
+  2 specifications
 </h2>
 
   <hr/>
@@ -135,30 +132,6 @@ div.supplement {
   2 specifications
 </h4><ul><li class="spec"><a name="1">should call IOne GetAList</a>
 
-  <div class="failure">
-    &lArr; FAILED
-    <ul class="prev-next">
-      <li class="failure">
-      </li>
-      <li class="failure"><a href="#2" title="Go to next failed specification">&dArr;</a>
-      </li>
-    </ul>
-  </div>
-  <p class="exception_type">
-    StructureMapException
-  </p>
-  <pre class="exception_message">StructureMap.StructureMapException: StructureMap Exception Code:  202
-No Default Instance defined for PluginFamily RhinoSpike.IOne, RhinoSpike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-   at StructureMap.BuildSession.&lt;.ctor&gt;b__0(Type t)
-   at StructureMap.Util.Cache`2.get_Item(KEY key)
-   at StructureMap.BuildSession.CreateInstance(Type pluginType)
-   at StructureMap.Container.GetInstance(Type pluginType)
-   at StructureMap.Container.GetInstance[T]()
-   at StructureMap.ObjectFactory.GetInstance[PLUGINTYPE]()
-   at RhinoSpike.MainGate..ctor() in c:\a_dev\spikes\spikes_rhino\app\RhinoSpike\MainGate.cs:line 14
-   at RhinoSpike.Test.ctor_.&lt;.ctor&gt;b__1() in c:\a_dev\spikes\spikes_rhino\test\RhinoSpike.Test\MainGate_Tests.cs:line 21
-   at Machine.Specifications.Utility.RandomExtensionMethods.InvokeIfNotNull(Because because)
-   at Machine.Specifications.Model.Context.EstablishContext()</pre>
 
 
 
@@ -182,30 +155,6 @@ No Default Instance defined for PluginFamily RhinoSpike.IOne, RhinoSpike, Versio
 
           </li><li class="spec"><a name="2">should call ITwo GetAList</a>
 
-  <div class="failure">
-    &lArr; FAILED
-    <ul class="prev-next">
-      <li class="failure"><a href="#1" title="Go to previous failed specification">&uArr;</a>
-      </li>
-      <li class="failure">
-      </li>
-    </ul>
-  </div>
-  <p class="exception_type">
-    StructureMapException
-  </p>
-  <pre class="exception_message">StructureMap.StructureMapException: StructureMap Exception Code:  202
-No Default Instance defined for PluginFamily RhinoSpike.IOne, RhinoSpike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-   at StructureMap.BuildSession.&lt;.ctor&gt;b__0(Type t)
-   at StructureMap.Util.Cache`2.get_Item(KEY key)
-   at StructureMap.BuildSession.CreateInstance(Type pluginType)
-   at StructureMap.Container.GetInstance(Type pluginType)
-   at StructureMap.Container.GetInstance[T]()
-   at StructureMap.ObjectFactory.GetInstance[PLUGINTYPE]()
-   at RhinoSpike.MainGate..ctor() in c:\a_dev\spikes\spikes_rhino\app\RhinoSpike\MainGate.cs:line 14
-   at RhinoSpike.Test.ctor_.&lt;.ctor&gt;b__1() in c:\a_dev\spikes\spikes_rhino\test\RhinoSpike.Test\MainGate_Tests.cs:line 21
-   at Machine.Specifications.Utility.RandomExtensionMethods.InvokeIfNotNull(Because because)
-   at Machine.Specifications.Model.Context.EstablishContext()</pre>
 
 
 
